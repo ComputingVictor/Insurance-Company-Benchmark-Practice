@@ -21,6 +21,18 @@ Find the dataset [here](https://archive-beta.ics.uci.edu/ml/datasets/insurance+c
 - Python 3.9.12
 - Jupyter Notebook
 
+## Content of the repository
+
+- `data`: 
+    - `Raw`: Documents downloaded from the source of the dataset.
+    - `Processed` data: Data dictionay processed.
+
+- `docs`: Complementary files of the notebook with functions ( Py files).
+- `html`: Notebooks exported as html files. 
+
+- `notebooks`: Notebooks of the project
+
+
 ## Roadmap
 
 - [x] EDA
