@@ -1,0 +1,23 @@
+def norm_category(df = None, obj_val = "", cat_val = ""):
+    '''
+    Normaliza el conteo de la variable en función de la variable objetivo.
+    :param df: Dataset
+    :param obj_val: Variable objetivo
+    :param cat_val: Variable 
+    :return: Dataframe
+    '''
+    
+    # Agrupamos y contamos las ocurrencias de las categorías en función de la variable objetivo.
+    grouped = df.groupby([obj_val, cat_val]).count().iloc[:,1]
+    grouped = grouped.reset_index()
+    grouped.columns = [obj_val, cat_val, 'counted']
+    
+    # Calculamos el porcentaje para cada grupo (variable objetivo) del total de elementos de dicha categoría (subgrupo)
+    grouped['group%'] = np.round(grouped['counted'] / 
+                                 grouped.groupby(obj_val)['counted'].transform('sum') * 100, decimals = 3)
+    return grouped
+    
+    
+    
+    
+    
