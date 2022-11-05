@@ -25,7 +25,7 @@ Find the dataset [here](https://archive-beta.ics.uci.edu/ml/datasets/insurance+c
 
 - `data`: 
     - `Raw`: Documents downloaded from the source of the dataset.
-    - `Processed` data: Data dictionay processed.
+    - `Processed data`: Data dictionay processed.
 
 - `docs`: Complementary files of the notebook with functions ( Py files).
 - `html`: Notebooks exported as html files. 
