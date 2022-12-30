@@ -28,7 +28,6 @@ Find the dataset [here](https://archive-beta.ics.uci.edu/ml/datasets/insurance+c
     - `Processed data`: Data dictionay processed.
 
 - `docs`: Complementary files of the notebook with functions ( Py files).
-- `html`: Notebooks exported as html files. 
 
 - `notebooks`: Notebooks of the project
 
